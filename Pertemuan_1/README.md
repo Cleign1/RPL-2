@@ -4,15 +4,15 @@ link video pertemuan 1: [video pertemuan 1](https://youtu.be/nhLB-4q2WFs?si=cGk3
 
 ## Desain Perangkat Lunak Berbasis Komponen
 
-menawarkan pendeka+an yang efisien dalam pengembangan aplikasi terdistribusi, terutama dalam konteks komputasi client/server. Dengan menggunakan komponen yang memungkinkan komunikasi antar-komponen dalam jaringan, pengembang dapat mengurangi waktu dan usaha pengembangan. Teknologi ini, yang juga disebut middleware, berfungsi sebagai penghubung antara aplikasi front-end dan back-end. Beberapa platform telah mengimplementasikan teknologi berbasis komponen ini, seperti Microsoft dengan COM DCOM, OMG dengan CORBA, dan Sun Microsystems dengan JavaBean/EJB.
+menawarkan pendekatan yang efisien dalam pengembangan aplikasi terdistribusi, terutama dalam konteks komputasi client/server. Dengan menggunakan komponen yang memungkinkan komunikasi antar-komponen dalam jaringan, pengembang dapat mengurangi waktu dan usaha pengembangan. Teknologi ini, yang juga disebut middleware, berfungsi sebagai penghubung antara aplikasi front-end dan back-end. Beberapa platform telah mengimplementasikan teknologi berbasis komponen ini, seperti Microsoft dengan COM/DCOM, OMG dengan CORBA, dan Sun Microsystems dengan JavaBean/EJB.
 
 ## DESAIN PERANCKAT LUNAK BERBASIS PATTERN
 
 menawarkan solusi umum yang dapat diterapkan berulang kali untuk menyelesaikan masalah desain perangkat lunak yang sering muncul. Design pattern tidak menyediakan kode langsung, melainkan templat atau panduan untuk menyusun solusi yang dapat diadaptasi dalam berbagai konteks. Pola desain ini, terutama dalam pemrograman berbasis objek, berfokus pada relasi dan interaksi antar kelas dan objek. Tiga kategori utama dari design pattern, yang diperkenalkan oleh Gang of Four (GoF), adalah:
 
-1. Creational pattern: menangani proses pembuatan objek.
-2. Structural Pattern - menangani struktur program dengan menggabungkan antarmuka melalui pewarisan untuk menciptakan fungsionalitas baru.
-3. Behavioral Pattern - mengatur interaksi antar objek, menjelaskan cara objek berkomunikasi untuk mencapai perilaku yang diinginkan dalam program.
+1. Creational pattern  : menangani proses pembuatan objek.
+2. Structural Pattern  : menangani struktur program dengan menggabungkan antarmuka melalui pewarisan untuk menciptakan fungsionalitas baru.
+3. Behavioral Pattern  : mengatur interaksi antar objek, menjelaskan cara objek berkomunikasi untuk mencapai perilaku yang diinginkan dalam program.
 
 Dengan design pattern, pengembangan perangkat lunak menjadi lebih terstruktur, mudah di maintenance, dan fleksibel.
 
@@ -28,7 +28,7 @@ bahasa pemrograman berorientasi objek, yang berarti Java sangat mendukung konsep
 
 ### Laporan Akhir
 
-1. Apa saja jenis-jenis utama dari design pattern dalam pengembangan perangkat lunak, dan bagaimana fungsimasing-masing pattern tersebut?
+1. Apa saja jenis-jenis utama dari design pattern dalam pengembangan perangkat lunak, dan bagaimana fungsi masing-masing pattern tersebut?
 2. Sebutkan 5 Manfaat dari ERP
 3. Bagaimana teknologi perangkat lunak berbasis komponen berperan dalam mengurangi waktu dan usaha pengembangan perangkat lunak?
 4. Apa saja implementasi teknologi berbasis komponen yang digunakan oleh Microsoft, OMG, dan Sun?
