@@ -51,7 +51,16 @@ public class MainView extends JFrame {
                 new Object[][] {},
                 new String[] {"ID", "Nama", "Harga", "Stok"}
         ));
-        productPanel.add(new JScrollPane(productTable), BorderLayout.CENTER);
+
+        // Add refresh button for product table
+        JButton refreshProductBtn = new JButton("Refresh Produk");
+        refreshProductBtn.addActionListener(e -> controller.refreshProductList());
+
+        // Create a panel for the product table and its refresh button
+        JPanel productTopPanel = new JPanel(new BorderLayout());
+        productTopPanel.add(refreshProductBtn, BorderLayout.NORTH);
+        productTopPanel.add(new JScrollPane(productTable), BorderLayout.CENTER);
+        productPanel.add(productTopPanel, BorderLayout.CENTER);
 
         // Cart
         JPanel cartPanel = new JPanel(new BorderLayout());
@@ -60,7 +69,16 @@ public class MainView extends JFrame {
                 new Object[][] {},
                 new String[] {"Produk", "Kuantitas", "Subtotal"}
         ));
-        cartPanel.add(new JScrollPane(cartTable), BorderLayout.CENTER);
+
+        // Add refresh button for cart
+        JButton refreshCartBtn = new JButton("Refresh Keranjang");
+        refreshCartBtn.addActionListener(e -> controller.refreshCart());
+
+        // Create a panel for the cart table and its refresh button
+        JPanel cartTopPanel = new JPanel(new BorderLayout());
+        cartTopPanel.add(refreshCartBtn, BorderLayout.NORTH);
+        cartTopPanel.add(new JScrollPane(cartTable), BorderLayout.CENTER);
+        cartPanel.add(cartTopPanel, BorderLayout.CENTER);
 
         // Add to cart button
         JButton addToCartBtn = new JButton("Tambah Ke Keranjang");
@@ -124,26 +142,12 @@ public class MainView extends JFrame {
 
         JButton updateBtn = new JButton("Update Produk");
         updateBtn.addActionListener(e -> {
-            try {
-                Product product = getSelectedProduct();
-                if (product != null) {
-                    String name = nameField.getText();
-                    double price = Double.parseDouble(priceField.getText());
-                    int stock = Integer.parseInt(stockField.getText());
-                    controller.updateProduct(product.getId(), name, price, stock);
-                    clearFields();
-                }
-            } catch (NumberFormatException ex) {
-                showError("Input Salah!");
-            }
+            new UpdateProductIDForm(controller).setVisible(true);
         });
 
         JButton deleteBtn = new JButton("Hapus Produk");
         deleteBtn.addActionListener(e -> {
-            Product product = getSelectedProduct();
-            if (product != null) {
-                controller.deleteProduct(product.getId());
-            }
+            new DeleteProductForm(controller).setVisible(true);
         });
 
         JPanel buttonPanel = new JPanel();
